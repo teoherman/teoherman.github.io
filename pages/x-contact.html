@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- custom css sheet for class project -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:700" rel="stylesheet">
 
     <title>Bavarian Brathaus</title>
@@ -17,17 +16,13 @@
     <div class="site-container">
 
       <div class="navigation">
-        <div class="links">
-          <a href="index.html" class="link">Home</a>
-          <a href="pages/menu.html">Menu</a>
-          <a href="pages/contact.html">Contact</a>
-        </div>
+
       </div> <!-- end navigation -->
 
 
       <div class="landing-area">
         <div class="landing-image">
-          <img src="img/homepage-splash.png" alt="Retaurant interior">
+          <img src="../img/restaurant-exterior.png" alt="Retaurant interior">
 
         </div><!-- end landing img -->
       </div> <!-- end landing area -->
@@ -41,7 +36,7 @@
 
           <div class="content-right">
             <div class="content-image-right">
-              <img src="img/chef2.png" alt="Chef making recipe">
+              <img src="../img/chef2.png" alt="Chef making recipe">
             </div>
 
             <div class="left-content">
@@ -60,7 +55,7 @@
 
           <div <class="content-left">
             <div class="content-image-left">
-              <img src="img/atmosphere.png" alt="Table and flowers">
+              <img src="../img/atmosphere.png" alt="Table and flowers">
             </div>
 
           <div class="right-content">
@@ -71,34 +66,84 @@
             </div>
           </div> <!-- end content-left -->
 
+          <div class="rating">
+            <h3>Guest Reviews</h3>
+            <p>Please leave us your Review and Comment</p>
+            <input type="button" value="Leave a Review" id="checkoutButton">
+
+            <div class="userReviewSection">
+              <p id="userRating"><p>
+              <p id="userReview"><p>
+
+            </div>
+
+
+          </div>
+
+          <div class="contact-form">
+            <input type="text" name="name" value="First Name"><br>
+            <input type="text" name="lastname" value="Last Name"><br>
+
+            <input type="date" id="myDate" value="">
+
+            <p>Click the button to choose your reservation day.</p>
+
+            <button onclick="myFunction()">Try it</button>
+
+            <p id="demo"></p>
+
+            <script>
+
+            function myFunction() {
+
+                var x = document.getElementById("myDate").value;
+                var booked1 = "2018-12-14";
+
+                console.log(booked1);
+                if (booked1 == x) {
+                  alert("Sorry! This time slot has been booked! Please choose another day")
+                } else {
+                  alert("Thanks! Your booking has been received")
+                  document.getElementById("demo").innerHTML = x;
+                }
+
+            }
+
+            </script>
+
+
         </div <!-- end body-conent -->
       </div> <!-- end body -->
 
-      <footer class="footer" >
-        <div class="f-description">
-          <h2>Our Repices</h2>
-          <p>4010 Durham-Chapel Hill Blvd, Durham, NC 27707, USA</a>
-          </p>
-        </div>
-        <div class="f-description">
-          <h2>Hours</h2>
-          <p>Monday to Sunday</p>
-          <p>7:00am – 11:00pm</p>
-          <p>Breakfast: 7:00am – 10:30am </p>
-          <p>Brunch: 10:30 - 2:00pm </p>
-          <p>Dinner: 5:00pm – 11:00pm</p>
-        </div>
-        <div class="f-description">
-          <h2>Contact</h2>
-          <p>T: (919) 381-6412 </p>
-          <p>E: contact@bavarianbrathaus.info </p>
-          <p>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram"></i>
-          </p>
-        </div><!-- end container -->
-      </footer>
+      <div class="footer">
 
+      </div> <!-- end footer -->
+
+    </div><!-- end container -->
+    <script>
+
+
+    var checkoutButton = document.querySelector("#checkoutButton");
+    checkoutButton.addEventListener("click", confirmPurchase);
+
+      function confirmPurchase() {
+        var rating
+        var userReview
+
+          rating = prompt("From 1 to 5, how was your stay?")
+          if (rating <= 3) {
+            userReview = prompt("Tell us how can we improve?")
+            document.getElementById("userRating").innerHTML = "Visitor Rating: " + rating
+            document.getElementById("userReview").innerHTML = "Visitor Review: " + userReview
+          } else {
+            userReview = prompt("Let us know about your great stay!")
+            document.getElementById("userRating").innerHTML = "Visitor Rating: " + rating
+            document.getElementById("userReview").innerHTML = "Visitor Review: " + userReview
+          }
+
+          }
+
+
+    </script>
   </body>
 </html>

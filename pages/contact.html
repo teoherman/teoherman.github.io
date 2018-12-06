@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- custom css sheet for class project -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:700" rel="stylesheet">
+
+    <title>Bavarian Brathaus</title>
+  </head>
+  <body>
+
+    <div class="site-container">
+
+      <div class="navigation">
+        <div class="links">
+          <a href="../index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div> <!-- end navigation -->
+
+
+      <div class="landing-area">
+        <div class="landing-image">
+          <img src="../img/restaurant-exterior.png" alt="Retaurant interior">
+
+        </div><!-- end landing img -->
+      </div> <!-- end landing area -->
+
+
+      <div class="body">
+        <div class="body-content">
+
+          <div class="content-overview">
+          </div> <!-- end content-overview -->
+
+          <div class="content-right">
+            <div class="content-image-right">
+              <img src="../img/interior.png" alt="Chef making recipe">
+            </div>
+
+            <div class="left-content">
+              <div class="content-description" style="position: absolute; top: 100px;">
+                <h3>Our Story</h3>
+                <p>We started out as two brothers with a love for our Oma (grandmother) Bavarian cooking. Through the years, we collected her recipes and first launched our German sausage food truck in 2006. Fast forward twelve years and we have Bavarian Brathaus running for over eight years</p>
+              </div> <!-- end content-description -->
+            </div>
+          </div><!-- end content-right -->
+
+
+            <div class="content-overview" style="padding-left: 435px;">
+              <p>“Everything in the kitchen is locally and ethically sourced. Our produce comes fresh every other day to ensure an exceptional experience every day. We specialize in the art of hospitality and make everything with heart and soul, down to the smallest detail.”</p>
+            </div> <!-- end content-overview -->
+
+
+
+
+          <div class="map">
+            <h3>Where to find us</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23084.070981360608!2d-79.40609186867243!3d43.67918310103847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34caba443e0f%3A0x4c98292c74bbab90!2sRyerson+University+Student+Learning+Centre!5e0!3m2!1sen!2sca!4v1543944545087" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class="rating">
+            <h3>Guest Reviews</h3>
+            <p>Please leave us your Review and Comment</p>
+            <input type="button" value="Leave a Review" id="checkoutButton">
+
+            <div class="userReviewSection">
+              <p id="userRating"><p>
+              <p id="userReview"><p>
+
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Book a Reservation</h3>
+            <p>Book your reservation with us today</p>
+            <input type="text" name="name" value="First Name"><br>
+            <input type="text" name="lastname" value="Last Name"><br>
+
+            <input type="date" id="myDate" value="">
+
+            <p>Click the button to choose your reservation day.</p>
+
+            <button onclick="myFunction()">Try it</button>
+
+            <p id="demo"></p>
+          </div>
+
+        </div <!-- end body-conent -->
+      </div> <!-- end body -->
+
+      <footer class="footer">
+        <div class="f-description">
+          <h2>Our Repices</h2>
+          <p>4010 Durham-Chapel Hill Blvd, Durham, NC 27707, USA</a>
+          </p>
+        </div>
+        <div class="f-description">
+          <h2>Hours</h2>
+          <p>Monday to Sunday</p>
+          <p>7:00am – 11:00pm</p>
+          <p>Breakfast: 7:00am – 10:30am </p>
+          <p>Brunch: 10:30 - 2:00pm </p>
+          <p>Dinner: 5:00pm – 11:00pm</p>
+        </div>
+        <div class="f-description">
+          <h2>Contact</h2>
+          <p>T: (919) 381-6412 </p>
+          <p>E: contact@bavarianbrathaus.info </p>
+          <p>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+          </p>
+        </div><!-- end container -->
+      </footer>
+
+    </div><!-- end container -->
+    <script>
+
+
+    var checkoutButton = document.querySelector("#checkoutButton");
+    checkoutButton.addEventListener("click", confirmPurchase);
+
+      function confirmPurchase() {
+        var rating
+        var userReview
+
+          rating = prompt("From 1 to 5, how was your stay?")
+          if (rating <= 3) {
+            userReview = prompt("Please tell us how can we improve?")
+            document.getElementById("userRating").innerHTML = "Visitor Rating: " + rating
+            document.getElementById("userReview").innerHTML = "Visitor Review: " + userReview
+          } else {
+            userReview = prompt("Great! PLease let us know about your great stay!")
+            document.getElementById("userRating").innerHTML = "Visitor Rating: " + rating
+            document.getElementById("userReview").innerHTML = "Visitor Review: " + userReview
+          }
+
+          }
+
+
+
+          function myFunction() {
+
+              var x = document.getElementById("myDate").value;
+              var booked1 = "2018-12-14";
+              var booked2 = "2018-12-07";
+              var booked3 = "2018-12-05";
+              var booked4 = "2018-12-24";
+
+              console.log(booked1);
+              if (booked1 == x || booked2 == x || booked3 == x || booked4 == x) {
+                alert("Sorry! This time slot has been booked! Please choose another day")
+              } else {
+                alert("Thanks! Your booking has been received")
+                document.getElementById("demo").innerHTML = "Thanks your booking has been received for: " + x;
+              }
+
+          }
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- custom css sheet for class project -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:700" rel="stylesheet">
+
+    <title>Bavarian Brathaus</title>
+
+    <style>
+
+      </style>
+
+  </head>
+  <body>
+    <div class="site-container">
+
+      <div class="navigation">
+        <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        </div>
+      </div> <!-- end navigation -->
+
+      <div class="landing-area">
+        <div class="landing-image">
+          <img src="../img/porkankle.png" alt="Retaurant interior">
+
+        </div><!-- end landing img -->
+      </div> <!-- end landing area -->
+
+      <div class="content-right">
+
+        <div class="content-overview" style="padding-left: 435px;">
+          <p>These Bavarian specials are perfect for a potluck. They're warm, flavourful, and hearty, so you'll know they are crowd pleasers that are great for serving large groups of people. Your friends and family will be coming back for second helpings of these traditional German dishes.</p>
+        </div> <!-- end content-overview -->
+
+        <div class="content-image-right" >
+          <img src="../img/chef3.png" alt="Chef making recipe">
+        </div>
+
+        <div class="left-content" style="position: absolute; top: 1180px;">
+          <div class="content-description">
+            <h3>Buy Our Chef’s Specials</h3>
+            <p>See our traditional Bavarian recipes made by our chef. Whether you're looking for Oktoberfest favorites or just want that signature Bavarian sausages for your family, our selection of foods will have you asking for more.</p>
+          </div> <!-- end content-description -->
+        </div>
+      </div><!-- end content-right -->
+
+      <div class="content-overview">
+        <p>See our Bavarian recipes that will help you steal the show. They're the centrepieces of the meal for a reason, after all. See the meat filled and bursting with flavour recipes that will make you and your friend savour every single bite and keep you coming back for more.</p>
+      </div> <!-- end content-overview -->
+
+      <div <class="content-left">
+        <div class="content-image-left">
+          <img src="../img/recipe.png" alt="Table and flowers">
+        </div>
+
+      <div class="right-content">
+          <div class="content-description" style="position: absolute; top: 130px;">
+            <h3>Our Famous Recipes</h3>
+            <p>Traditional Bavarian recipes that are quick and easy, so you can have them on the table in no time. Or teach them to the rest of the family, so everyone can appreciate!</p>
+          </div> <!-- end content-description -->
+        </div>
+      </div> <!-- end content-left -->
+
+      <div class="content-overview">
+        <p>“Everything in the kitchen is locally and ethically sourced. Our produce comes fresh every other day to ensure an exceptional experience every day. We specialize in the art of hospitality and make everything with heart and soul, down to the smallest detail.”</p>
+      </div> <!-- end content-overview -->
+
+      <div class="menu-tab">
+        <h3>Menu</h3>
+        <p>See the dishes by our famous chef.</p>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openMenu(event, 'Breakfast')">Breakfast</button>
+          <button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>
+          <!-- <button class="tablinks" onclick="openMenu(event, 'Tokyo')">Tokyo</button> -->
+        </div>
+
+        <div id="Breakfast" class="tabcontent">
+          <h3>Breakfast Menu</h3>
+            <div id="Local Farm Breakfast" class="menublock">
+              <h4>Local Farm Breakfast</h4>
+                <div id="One Egg Farm Breakfast" class="menuitem">
+                  <h5>One Egg Farm Breakfast</h5>
+                  <p>One egg (cooked any style) with your choice of one of the following:</p>
+                  <ul>
+                    <li>Two Strips of Bacon</li>
+                    <li>Two Strips of Peppered Bacon</li>
+                    <li>Two Link Sausages</li>
+                  </ul>
+                  <p>Price: $9</p>
+                </div>
+              <div id="Two Egg Farm Breakfast" class="menuitem">
+                <h5>Two Egg Farm Breakfast</h5>
+                <p>Two eggs (cooked any style) with your choice of one of the following:</p>
+                <ul>
+                  <li>Four Strips of Bacon</li>
+                  <li>Four Strips of Peppered Bacon</li>
+                  <li>Four Link Sausages</li>
+                  <li>One Patty Sausage</li>
+                  <li>One Slice of Smoked Ham</li>
+                </ul>
+                <p>Price: $11</p>
+              </div>
+              <div id="Three Egg Farm Breakfast" class="menuitem">
+                <h5>Three Egg Farm Breakfast</h5>
+                <p>Three eggs (cooked any style) with your choice of one of the following:</p>
+                <ul>
+                  <li>Four Strips of Bacon</li>
+                  <li>Four Strips of Peppered Bacon</li>
+                  <li>Four Link Sausages</li>
+                  <li>One Patty Sausage</li>
+                  <li>One Slice of Smoked Ham</li>
+                </ul>
+                <p>Price: $14</p>
+              </div>
+            </div>
+            <div id="Bavarian Toast" class="menublock">
+              <h4>Bavarian Toast</h4>
+                <div id="Bavarian Toast" class="menuitem">
+                  <h5>Bavarian Toast</h5>
+                  <p>One egg (cooked any style) & two pieces of our German toast with choice of two strips of bacon or link sausage.</p>
+                  <p>Price: $10</p>
+                </div>
+                <div id="Large Bavarian Toast Combo" class="menuitem">
+                  <h5>Large Bavarian Toast Combo</h5>
+                  <p>Two eggs (cooked any style) & two pieces of our German toast with choice of four strips of bacon or link sausage.</p>
+                  <p>Price: $18</p>
+                </div>
+                <div id="Bavarian Scrambled Eggs" class="menuitem">
+                  <h5>Bavarian Scrambled Eggs</h5>
+                  <p>Smoked ham. Tillamook cheddar chees, green pepper & onion. Served with hash browns and toast.</p>
+                  <p>Price: $12</p>
+                </div>
+            </div>
+            <div id="Traditional Brunch" class="menublock">
+              <h4>Traditional Brunch</h4>
+                <div id="Bavarian Sausage Mix" class="menuitem">
+                  <h5>Bavarian Sausage Mix</h5>
+                  <p>Bavarian-style sausage served in a warm bread roll with special sauce, grilled red, yellow, and green bell pepper, red onion, and swiss cheese. Served with French Fries.</p>
+                  <p>Price: $12</p>
+                </div>
+                <div id="Bratwurst & Sauerkraut" class="menuitem">
+                  <h5>Bratwurst & Sauerkraut</h5>
+                  <p>Two bratwurst sausages over sauerkraut with mashed potatoes & gravy, and creamy red cabbage.</p>
+                  <p>Price: $14</p>
+                </div>
+                <div id="Pork Schnitzel - Brunch Portion" class="menuitem">
+                  <h5>Pork Schnitzel - Brunch Portion</h5>
+                  <p>Smaller Brunch Portion - Boneless pork loin chops - breaded, pan fried and sauced with a rich demi-glace. Served with creamy red cabbage, choice of potato and warm French baguette.</p>
+                  <p>Price: $13</p>
+                </div>
+                <div id="Beef Stroganoff - Brunch Portion" class="menuitem">
+                  <h5>Beef Stroganoff - Brunch Portion</h5>
+                  <p>A deliciously rich & hearty stroganoff made with mushrooms, onions, sour cream, garlic, Burgundy wine and tender beef over egg noodles. Served with warm baguette.</p>
+                  <p>Price: $15</p>
+                </div>
+            </div>
+            <div id="Sweet Breakfast" class="menublock">
+              <h4>Sweet Breakfast</h4>
+                <div id="Sweet Breakfast" class="menuitem">
+                  <h5>Bavarian Pancakes</h5>
+                  <p>Bavarian style skillet pancakes, served with your choice of fruit, granulated sugar and vanilla ice cream</p>
+                <p>Price: $12</p>
+                </div>
+                <div id="German Waffles" class="menuitem">
+                  <h5>German Waffles</h5>
+                  <p>Alp style berry fluffy waffles served with your choice of jam, marmalade or maple syrup with a dollop of whipped cream and choice of berries.</p>
+                  <p>Price: $10</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Drinks" class="tabcontent">
+          <h3>Drinks</h3>
+            <div id="Non-Alcoholic Beverages" class="menublock">
+              <h4>Non-Alcoholic Beverages"</h4>
+              <div id="Coffee" class="menuitem">
+                <h5>Coffee</h5>
+                <p>Price: $2.50</p>
+              </div>
+              <div id="Tea" class="menuitem">
+                <h5>Tea</h5>
+                <p>Choice of the following loose-leaf teas</p>
+                <ul>
+                  <li>Earl Grey</li>
+                  <li>Green</li>
+                  <li>Ginger Lemon</li>
+                  <li>Oolong</li>
+                  <li>Chai</li>
+                <p>Price: $2.50</p>
+              </div>
+              <div id="Fresh Juice" class="menuitem">
+                <h5>Fresh Juice</h5>
+                <p>Choice of the following fresh-pressed juices:</p>
+                <ul>
+                  <li>Apple</li>
+                  <li>Orange</li>
+                  <li>Grapefruit</li>
+                  <li>Blueberry ginger</li>
+                <p>Price: $3</p>
+              </div>
+              <div id="Fountain Pop" class="menuitem">
+                <h5>Fountain Pop</h5>
+                <p>Price: $2.50</p>
+              </div>
+            </div>
+            <div id="Alcoholic Beverages" class="menublock">
+              <h4>Alcoholic Beverages</h4>
+                <div id="Mimosa" class="menuitem">
+                    <h5>Mimosa</h5>
+                    <p>Champagne & fresh-pressed orange juice</p>
+                    <p>Price: $7</p>
+                </div>
+                <div id="Caesar" class="menuitem">
+                    <h5>Caesar</h5>
+                    <p>Vodka, clamato juice, & celery</p>
+                    <p>Price: $7</p>
+                </div>
+                <div id="Peach Bellini" class="menuitem">
+                    <h5>Peach Bellini</h5>
+                    <p>Prosecco, & white peach puree</p>
+                    <p>Price: $6.75</p>
+                </div>
+            </div>
+            <div id="Beers" class="menublock">
+              <h4>Beers</h4>
+                <div id="Schneider Weisse Tap 6" class+"menuitem">
+                  <h5>Schneider Weisse Tap 6</h5>
+                  <p>A legendary German beer brewed with wheat and dark malts. It’s full-bodied, subtly sweet, smooth and creamy, and peppered with spiciness. High in alcohol and big on flavour.</p>
+                  <p>Price: $10</p>
+                </div>
+                <div id="Fruh Kolsch" class+"menuitem">
+                  <h5>Fruh Kolsch</h5>
+                  <p>Clean and light with a bready sweetness, some lemon fruitiness and a dry, hoppy finish. It’s so drinkable that a single pint rarely seems big enough.</p>
+                  <p>Price: $8</p>
+                </div>
+                <div id="Radeberger Pilsner" class+"menuitem">
+                  <h5>Radeberger Pilsner</h5>
+                  <p>Light golden colour with a creamy mousse; roasted grain, malty, floral aromas with light malt notes; light on the palate with a long finish.</p>
+                  <p>Price: $7</p>
+                </div>
+                <div id="Fruli" class+"menuitem">
+                  <h5>Fruli</h5>
+                  <p>Fruli is a unique blend of high quality, lightly-hopped Belgian White Beer & pure strawberries. This all-natural, traditional and authentic treat delivers a soft & refreshing indulgence that is simply delicious.</p>
+                  <p>Price: $8.50</p>
+                </div>
+                <div id="Spaten Oktoberfest" class+"menuitem">
+                  <h5>Spaten Oktoberfest</h5>
+                  <p>Traditionally brewed in March and served in Autumn, around the Oktoberfest celebration, Spaten Oktoberfest is a sweet, brown beer with a mildly malty taste and roasted notes. It’s surprisingly crisp for such a sweet beer but has a round, earthy finish.</p>
+                  <p>Price: $9</p>
+                </div>
+                <div id="Berliner Kindl Weisse" class+"menuitem">
+                  <h5>Berliner Kindl Weisse</h5>
+                  <p>A classic summer drink in Berlin, Berliner Weisse is a tart, tangy beer which gets its characteristic flavor from deliberately soured grains. It’s traditionally served in a large, boule-like glass and often colored green with a shot of sweet woodruff syrup or red with raspberry.</p>
+                  <p>Price: $9</p>
+                </div>
+            </div>
+          </div>
+
+      </div>
+
+
+</div>
+
+<footer class="footer" style="margin-top: 0px;">
+  <div class="f-description">
+    <h2>Our Repices</h2>
+    <p>4010 Durham-Chapel Hill Blvd, Durham, NC 27707, USA</a>
+    </p>
+  </div>
+  <div class="f-description">
+    <h2>Hours</h2>
+    <p>Monday to Sunday</p>
+    <p>7:00am – 11:00pm</p>
+    <p>Breakfast: 7:00am – 10:30am </p>
+    <p>Brunch: 10:30 - 2:00pm </p>
+    <p>Dinner: 5:00pm – 11:00pm</p>
+  </div>
+  <div class="f-description">
+    <h2>Contact</h2>
+    <p>T: (919) 381-6412 </p>
+    <p>E: contact@bavarianbrathaus.info </p>
+    <p>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-instagram"></i>
+    </p>
+  </div><!-- end container -->
+</footer>
+
+
+<script>
+function openMenu(evt, menuName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+
+</html>
